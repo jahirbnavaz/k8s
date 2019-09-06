@@ -1,6 +1,6 @@
 docker build -t jahirbnavaz/multi-client:latest -t jahirbnavaz/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t jahirbnavaz/multi-server:latest -t jahirbnavaz/multi-server:$SHA -f ./client/Dockerfile ./server
-docker build -t jahirbnavaz/multi-worker:latest -t jahirbnavaz/multi-worker:$SHA -f ./client/Dockerfile ./worker
+docker build -t jahirbnavaz/multi-server:latest -t jahirbnavaz/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t jahirbnavaz/multi-worker:latest -t jahirbnavaz/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push jahirbnavaz/multi-client:latest
 docker push jahirbnavaz/multi-server:latest
